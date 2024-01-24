@@ -1,16 +1,16 @@
 let result = '';
 
-function appendToResult(value) {
+function Result(value) {
     result += value;
     document.getElementById('result').value = result;
 }
 
-function clearResult() {
+function ClearResult() {
     result = '';
     document.getElementById('result').value = result;
 }
 
-function calculateResult() {
+function Calculate() {
     try {
         result = eval(result);
         document.getElementById('result').value = result;
